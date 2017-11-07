@@ -1,0 +1,43 @@
+<template name="addcategory">
+    <div class="container modal-body" style="width:80%;height: auto; background: rgba(259, 253, 225, 0.5)!important;">
+        <div class="container-fluid" style=" background: rgba(259, 253, 225, 1)!important;border-radius: 10px;">
+            <div class="col-12 col-md-4 col-xl-5">
+                <center>
+                    <br><br><br>
+                    <img src="images/addcategory.png" id='img-upload' class="img img-responsive" style="width:300px;margin:17px;border-radius:100%;height:auto;">
+
+                    <br><br>
+                </center>
+            </div>
+            <div class="container-fluid">
+                <div class="col-12 col-md-8 col-xl-7 modal-body" style="text-align:center; font-family:  Century Gothic; font-weight: bold;font-size: 20px ;height:auto; background: rgba(259, 253, 225, 1)!important;padding:10px z">
+                    <form id="frmLogin" class="form-horizontal form-group" role="form" action="" method="post">
+
+                        <br>
+                        <label for="#category"> Category Name </label>
+                        <input type="text" class="form-control control-lg" name="category" id="categoryname" placeholder="Enter category name">
+                        <br>
+                        <label for="#categorylist"> Category List</label>
+                        <form style="text-align:center; font-family:  Century Gothic; font-weight: bold;font-size: 15px ;height:auto; background: rgba(259, 253, 225, 0.9)!important;padding:10px z">
+                            <ol type="1">
+                                <br> {{#each category_name}}
+                                <li id={{_id}}>
+                                    <div class="form-control">
+                                        <input type="text" style="border-style: none; border-radius: 10px; width: auto;" value={{name}} name="category_name" size="50">
+
+                                        <a href="#" id="btndelete" class="delete_category">
+                                    <span class="glyphicon glyphicon-trash" style="margin-right:10px;"></span></a>
+                                    </div>
+                                </li>
+                                <br> {{/each}}
+
+                            </ol>
+                        </form>
+
+                    </form>
+                </div>
+                <!--<div class="col-lg-3"></div>-->
+            </div>
+        </div>
+    </div>
+</template>

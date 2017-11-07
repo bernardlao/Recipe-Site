@@ -1,0 +1,82 @@
+<template name="header">
+
+	<nav class="navbar navbar-inverse fornav  navbar-fixed-top transparent" style="  background: rgba(104, 148, 180, 1)!important;font-family: Century Gothic; font-weight: bold"
+	 data-spy="affix" data-offset-top="197">
+
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+			<a class="navbar-brand" href="{{ pathFor 'Home'}}" style="color:#FFFFFF;">Creamy Recipes</a>
+		</div>
+		<div>
+			<div class="collapse navbar-collapse pull-left  forheader " id="myNavbar">
+				<ul class="nav navbar-nav ">
+					<li>
+						<a id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color : white">
+   							<span class="glyphicon glyphicon-th-large" style="margin-right:10px;"></span> ALL RECIPES
+   							 <span class="caret"></span>
+ 						 </a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+							{{#each category}}
+							<li id="{{_id}}"><a href="{{ pathFor 'ViewRecipe'}}" style="color: black;">{{name}}</a></li>
+							{{/each}}
+						</ul>
+					</li>
+
+					<li><a href="{{ pathFor 'AboutUs'}}" style="color:#FFFFFF;" id="forabout">
+								<span class="glyphicon glyphicon-exclamation-sign" style="margin-right:10px;"></span>ABOUT US</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="collapse navbar-collapse pull-right" id="myNavbar">
+			<form class="collapse navbar-collapse  form-inline centered" style="margin-right:29px;margin-top:5px;">
+
+				
+
+				<a href="{{ pathFor 'Admin'}}" style="color:#FFFFFF;" id="forlogin_user" type="button" data-toggle="dropdown" aria-haspopup="true"
+				 aria-expanded="true">
+  						<img src="images/user1.png" id="user_img" alt="..." class="rounded-circle" style="background-color: black; width: 30px; height: 30px; border-radius: 100%;">
+    					<span class="caret"></span>
+ 					 </a>
+				<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="login_user">
+					<div id="login" class="onhides" style="padding:10px;">
+						<li><a href="{{ pathFor 'Profile'}}" style="color:black;" id="forsettings" type="button">
+								<span class="glyphicon glyphicon-user" style="margin-right:10px;" ></span>Profile</a>
+						</li>
+						<li><a href="{{ pathFor 'AddRecipe'}}" style="color:black;" id="foraddrecipe" type="button">
+								<span class="glyphicon glyphicon-plus-sign "  style="margin-right:10px;"></span>Add Recipe</a>
+						</li>
+					</div>
+					<div id="forAdminlog" class="onhides" style="padding:10px;">
+						<li><a href="{{ pathFor 'Home'}}" style="color:black;" id="forlogout" type="button">
+								<span class="glyphicon glyphicon-off" style="margin-right:10px;"></span>LogOut</a>
+						</li>
+					</div>
+					<div id="forAdmin" class="hiddens" style="padding:10px;">
+						<li><a href="{{ pathFor 'AddCategory'}}" style="color:black;" id="foraddcategory" type="button">
+								<span class="glyphicon glyphicon-plus-sign " style="margin-right:10px;"></span>Add Category</a>
+						</li>
+					</div>
+					<div id="notlogin" class="onshows" style="padding:10px;">
+						<li><a href="{{ pathFor 'Login'}}" style="color:black;" id="forlogin" type="button">
+								<span class="glyphicon glyphicon-user " style="margin-right:10px;"></span>Sign In</a>
+						</li>
+						<li><a href="{{ pathFor 'Register'}}" style="color:black;" id="forlogin" type="button">
+								<span class="glyphicon glyphicon-user " style="margin-right:10px;"></span>Sign Up</a>
+						</li>
+
+					</div>
+					<li>
+						<input type="text" id="login_user" value="wala pa" hidden>
+					</li>
+				</ul>
+
+			</form>
+		</div>
+	</nav>
+
+</template>

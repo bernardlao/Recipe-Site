@@ -1,0 +1,68 @@
+<template name="register">
+
+    <div class="container modal-body" style="width:80%;height: auto; background: rgba(259, 253, 225, 0.5)!important;border-radius: 10px;">
+        <div class="container-fluid" style=" background: rgba(259, 253, 225, 1)!important;">
+            <div class="col-12 col-md-5 col-xl-6">
+                <center>
+                    <br><br><br>
+                    <img src="images/signup.png" id='img-upload' class="img img-responsive" style="width:300px;margin:17px;border-radius:100%;height:auto;">
+
+                    <br><br>
+                </center>
+            </div>
+            <div class="container-fluid">
+                <div class="col-12 col-md-7 col-xl-6 modal-body" style="border-radius: 10px;font-family: Century Gothic;;height:auto; background: rgba(259, 253, 225, 1)!important;padding:10px z">
+                    <form id="frmSignUp" class="form-horizontal form-group" role="form" action="" method="post">
+                        <div class="form-row">
+                            <br />
+                            <br>
+                            <label for="inputEmail" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" id="txtEmail" placeholder="johndoe@gmail.com">
+                            <br>
+                            <label for="inputPassword" class="col-form-label">Create Password</label>
+                            <input type="password" class="form-control" id="txtPassword" placeholder="Password">
+
+                            <br>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="#txtFName">Firstname</label>
+                                        <input type="text" class="form-control control-lg" id="fName" placeholder="Firstname">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="#txtLName">Lastname</label>
+                                        <input type="text" class="form-control control-lg" id="lName" placeholder="Lastname">
+                                    </div>
+                                </div>
+                            </form>
+                            <br>
+                            <label for="#txtAddress" class="col-form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+                            <br>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="cmbGender" class="col-form-label">Gender</label>
+                                        <select class="form-control" role="group" id="cmbgender" placeholder="Choose Gender">
+			                <option>Male</option>
+     		                <option>Female</option>
+                         </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="age" class="col-form-label">Age</label>
+                                        <input type="number" id="txtAge" class="form-control">
+                                    </div>
+                                </div>
+                            </form>
+                            <br>
+                        </div>
+                        <button id="btnSignUp" class="btn btn-info pull-right" style="font-weight: bold; text-align: center;font-size: 20px; size: 40;">Sign Up</button>
+                        <br><br>
+                    </form>
+                </div>
+                <!--<div class="col-lg-3"></div>-->
+            </div>
+        </div>
+    </div>
+
+</template>

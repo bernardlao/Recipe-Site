@@ -1,0 +1,337 @@
+body{
+    background-image: url('images/dog.png');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;    
+    height: 100%;
+}
+
+#ulsidenav :hover
+{
+    background-color: #242424;
+    transition: 0.3s ease-in-out;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+#ulsidenav1 :hover
+{
+    transition: 0.3s ease-in-out;
+    text-decoration-style: none;
+    text-decoration-line: none;
+    
+}
+#lisidenav :hover
+{
+    background-color: black;
+    transition: 0.3s ease-in-out;
+    text-decoration-style: none;
+    text-decoration-line: none;
+
+}
+
+@media only screen and (max-width:769px)
+{
+
+}
+
+
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: 2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+.funkyradio input[type="radio"]:focus ~ label:before,
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="radio"]:checked ~ label:before,
+.funkyradio-default input[type="checkbox"]:checked ~ label:before {
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"]:checked ~ label:before,
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.funkyradio-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+.funkyradio-danger input[type="radio"]:checked ~ label:before,
+.funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.funkyradio-warning input[type="radio"]:checked ~ label:before,
+.funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+.funkyradio-info input[type="radio"]:checked ~ label:before,
+.funkyradio-info input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5bc0de;
+}
+
+*
+{
+    font-family: 'Century Gothic';
+    font-size: '100%';
+}
+
+[name=addcategory]
+{
+    border-radius: 10px;
+    padding: 0.15 em;
+
+}
+[name=addcategory]:hover
+{
+    background-color:rgba(259, 253, 225, 0.9)!important;
+    cursor: pointer;
+    transition:  0.2s ease-in-out;
+
+}
+
+[name=addcategory]:focus
+{
+    background-color: rgba(259, 253, 225, 0.9)!important;
+    cursor: default;
+    transition:  0.2s ease-in-out;
+    outline: none;
+}
+
+
+.checked [name=addcategory]
+{ text-decoration: line-through;}
+
+.checked [name=addcategory],
+.checked [name=addcategory].hover,
+.checked [name=addcategory].focus
+{
+    background-color: rgba(255, 232, 231);
+}
+
+input.error{ background-color: rgba(255, 232, 231);}
+
+/*addrecipe css*/
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
+
+
+.defaultbackground
+{
+  background: rgba(259, 253, 225, 1)!important;
+  height: auto;
+  padding: 20px;
+  
+
+}
+
+/*end of addrecipe css*/
+
+/*home css*/
+.foodlabel {
+	display: inline-block;
+	text-align: center;
+	width: auto;
+	margin: 25px 0;
+	color: white;
+	background: url(images/category.png) no-repeat center;
+	background-size: 100% 35px;
+	font-size: 12px;
+	letter-spacing: -0.3px;
+	line-height: 35px;
+	padding: 0 25px;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+	
+	
+	line-height: 1.4em;
+    height: auto;
+    padding: 8px 20px;
+    background-size: 100% 100%;
+}
+.recipe-item .foodlabel {
+	display: block;
+  margin-top: 5px;
+	margin-bottom: 5px;
+}
+.recipe-item-img {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+/*end home css*/
+
+/*footer css*/
+div::-webkit-scrollbar
+{
+width: 0.5em;
+}
+div::-webkit-scrollbar-track
+{
+-webkit-box-shadow: inset 0 0 66px rgba(0,0,0,0.4);
+border-radius:20px;
+}
+div::-webkit-scrollbar-thumb
+{
+background-color: gray;
+outline: 1px solid white;
+border-radius:10px;
+}
+.hov
+{
+float:right;
+margin-right:20px;
+align:center;
+margin-top: 2px;
+word-spacing:0px;
+color:white;
+background-color: #232323;
+}
+.hov:hover
+{
+text-decoration: underline;
+transition-delay: .2s;
+transition: all .3s ease-out;
+transform: scale(1.2);
+border-bottom: #D1D3D4;
+}
+/*.footer
+{
+  background-color: #232323;
+  width: 100%;
+}*/
+#fb:hover{
+  float:right;
+  margin-right:20px;
+  color:white;
+  background-color:blue;
+}
+#tw:hover{
+  float:right;
+  margin-right:20px;
+  color:white;
+  background-color:#1dcfff;
+}
+#it:hover{
+  float:right;
+  margin-right:20px;
+  color:white;
+  background-color:#fa6400;
+}
+
+.onhides{display:none;visibility:hidden}
+.onshows{display:block;visibility:visible}
+.hiddens{display: none; visibility:hidden}
+
+/*end of footer css*/
+
+/*css header*/
+ .forheader ul li{
+  color:white;  
+  transition:  0.3s  all ease-out;
+ }
+ .forheader ul li:hover{
+    background-color:#5cb85c;
+    color:#242424;
+  
+}
+ .forheader ul li:active{
+   border-bottom: 10px solid #D1D3D4 ; 
+   }
+
+.disabled_ol{
+   pointer-events: none;
+        cursor: default;
+        opacity: 0.6;
+}
+/*end css header*/

@@ -1,0 +1,42 @@
+<template name="viewrecipesbycategory">
+    <div class="container modal-body" style="width:100%;height: auto; background: rgba(259, 253, 225, 0.5)!important;">
+
+        <!--  end acordeon -->
+
+        <div class="container col-12 col-md-9 col-xl-10" style="height:auto; background: rgba(259, 253, 225, 1)!important;padding:10px z">
+            <br /><br />
+            <div class="container-fluid panel-group" style="color: black;font-family: Century Gothic;font-size: 15px;line-height: 2em; font-weight: bold;">
+                <div class="panel panel-default">
+                    <div class="panel-body" style="font-size: 25px; font-weight:bold; background: rgba(205, 202, 202, 0.8)">
+                        <label id="recipe_cat" value=""> </label>
+                        <label> Category Name :  </label>
+                    </div>
+                </div>
+                <div class="panel panel-default" style="color:black">
+                    <div class="panel-body container-fluid">
+                        <center>
+                            <ul class="list-inline">
+                                {{#each recipe_cat}}
+                                <li class="list-inline-item col-lg-4" style="padding:10px">
+                                    <div class="hovereffect">
+                                        <div class="card" style="width:20em; height:100%; background-color: aliceblue; border-radius: 10px; padding:10px;font-family: Century Gothic;font-size: 15px;text-decoration-style: none">
+                                            <a href="{{ pathFor 'ViewOnly'}}" class="info">
+                                        <img class="card-img-top img-responsive" src="{{photo}}" alt="Card image cap" style="width:100% ; height: 100%;border-radius:10px">
+                                        </a>
+                                            <div class="card-body ">
+                                                <p class="card-text">{{recipe_name}} </p>
+                                                <span class="{{classNeed}}" style="vertical-align: center" id="hearteu"></span>
+                                                <br> {{likes}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

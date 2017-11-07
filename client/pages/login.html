@@ -1,0 +1,32 @@
+<template name="login">
+
+    <div class="container modal-body" style="width:80%;height: auto; background: rgba(259, 253, 225, 0.5)!important;border-radius: 10px;">
+        <div class="container-fluid" style=" background: rgba(259, 253, 225, 1)!important;">
+            <div class="col-12 col-md-5 col-xl-6">
+                <center>
+                    <br><br><br>
+                    <img src="images/signin.png" id='img-upload' class="img img-responsive" style="width:300px;margin:17px;border-radius:100%;height:auto;">
+                    <br><br>
+                </center>
+            </div>
+            <div class="container-fluid">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 jumbotron" style="font-family: Century Gothic;font-size: 20px ;height:auto; background: rgba(259, 253, 225, 1)!important;padding:10px z">
+                    <form id="frmLogin" class="form-horizontal form-group container-fluid" role="form" action="" method="post">
+                        <label> Sign In </label>
+                        <p>to continue </p>
+                        <br>
+                        <label for="#email" style="text-align: center">Email</label>
+                        <input type="email" class="form-control form-control-success" id="email" placeholder="Enter your email">
+                        <br>
+                        <label for="#password">Password</label>
+                        <input type="password" class="form-control control-lg" name="password" id="pword" placeholder="Password">
+                        <br />
+                        <button type="submit" id="btnlogin" class="btn btn-primary pull-right">Log In </button>
+                    </form>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </div>
+</template>
